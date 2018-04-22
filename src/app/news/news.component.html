@@ -1,0 +1,6 @@
+<div class="article" *ngFor='let article of arrayNews'>
+    <p><img [src]="article.urlToImage" alt=""></p>
+    <h3>{{article.title}}</h3>
+    <p>{{article.description}}</p>
+    <p><button (click)="saveArticle(article)">save</button></p>
+</div>
